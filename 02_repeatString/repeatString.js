@@ -3,6 +3,12 @@ const repeatString = function(textInput, numberOfTextInputs) {
         let textOutput = ''
         
         return textOutput;
+    } else if (numberOfTextInputs < 0) {
+        
+        let textOutput = 'ERROR'
+    
+        return textOutput
+        
     } else if (numberOfTextInputs > 0) {
         let textOutput = textInput
 
