@@ -1,7 +1,7 @@
 const sumAll = function(firstRangeValue, lastRangeValue) {
     let sum = 0
 
-    if (firstRangeValue < 0 || lastRangeValue < 0) {
+    if (firstRangeValue < 0 || lastRangeValue < 0 || typeof firstRangeValue != 'number' || typeof lastRangeValue != 'number') {
         
         return 'ERROR'
 
