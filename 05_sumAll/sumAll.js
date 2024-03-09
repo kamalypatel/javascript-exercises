@@ -1,10 +1,21 @@
 const sumAll = function(firstRangeValue, lastRangeValue) {
     let sum = 0
 
-    for (let i = firstRangeValue; i <= lastRangeValue; i++) {
-        sum += i
+    if (lastRangeValue < firstRangeValue) {
+
+        for (let i = lastRangeValue; i <= firstRangeValue; i++) {
+            sum += i
+        }
+
+        return sum
+    } else {
+
+        for (let i = firstRangeValue; i <= lastRangeValue; i++) {
+            sum += i
+        }
+        
+        return sum
     }
-    return sum
 };
 
 // Do not edit below this line
