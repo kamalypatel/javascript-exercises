@@ -1,7 +1,11 @@
 const sumAll = function(firstRangeValue, lastRangeValue) {
     let sum = 0
 
-    if (lastRangeValue < firstRangeValue) {
+    if (firstRangeValue < 0 || lastRangeValue < 0) {
+        
+        return 'ERROR'
+
+    } else if (lastRangeValue < firstRangeValue) {
 
         for (let i = lastRangeValue; i <= firstRangeValue; i++) {
             sum += i
