@@ -6,7 +6,7 @@ const removeFromArray = function(inputArray, ...removeValues) {
 
     for (let value of removeValues) {
         for (let i = 0; i <= arrayLength; i++) {
-            if (inputArray[i] == value) {
+            if (inputArray[i] == value && typeof inputArray[i] == typeof value) {
                 outputArray.splice(i,1)
                 console.log(outputArray)
                 i--
