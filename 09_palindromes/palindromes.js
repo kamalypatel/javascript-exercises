@@ -1,10 +1,14 @@
 const palindromes = function (palindromeString) {
     let newString = ''
-    for (let i = palindromeString.length - 1; i >= 0; i--) {
-        newString += palindromeString.charAt(i)
+
+    cleanedString = palindromeString.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()/^\s+|\s+$]/g,"")
+
+    for (let i = cleanedString.length - 1; i >= 0; i--) {
+        
+        newString += cleanedString.charAt(i)
     }
-    
-    return newString == palindromeString ? true : false
+
+    return newString.toLowerCase() == cleanedString.toLowerCase() ? true : false
     
 };
 
