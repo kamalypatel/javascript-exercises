@@ -1,7 +1,9 @@
-const add = function(total, ...numbers) {
-  let sum = parseInt(total);
-  for (num in numbers) {
-    sum = parseInt(sum) + parseInt(num);
+const add = function(firstNumber, ...numbers) {
+  let sum = parseInt(firstNumber);
+  console.log(sum)
+  for (let num of numbers) {
+    sum += parseInt(num);
+    console.log(num);
   }
   return sum;
 };
