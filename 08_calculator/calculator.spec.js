@@ -9,13 +9,13 @@ describe('add', () => {
     expect(calculator.add(2, 2)).toBe(4);
   });
 
-  test.skip('adds positive numbers', () => {
+  test('adds positive numbers', () => {
     expect(calculator.add(2, 6)).toBe(8);
   });
 });
 
 describe('subtract', () => {
-  test.skip('subtracts numbers', () => {
+  test('subtracts numbers', () => {
     expect(calculator.subtract(10, 4)).toBe(6);
   });
 });
@@ -25,11 +25,11 @@ describe('sum', () => {
     expect(calculator.sum([])).toBe(0);
   });
 
-  test.skip('computes the sum of an array of one number', () => {
+  test('computes the sum of an array of one number', () => {
     expect(calculator.sum([7])).toBe(7);
   });
 
-  test.skip('computes the sum of an array of two numbers', () => {
+  test('computes the sum of an array of two numbers', () => {
     expect(calculator.sum([7, 11])).toBe(18);
   });
 
