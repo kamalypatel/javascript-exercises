@@ -33,8 +33,18 @@ const power = function(originalNumber, powerTo) {
   return total
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+	if (number == 1 || number == 0) {
+    return 1;
+  } else if (number < 1) {
+    return -1;
+  } else {
+    let total = 1;
+    for (let i = 1; i <= number; i++) {
+      total = total * i;
+    }
+    return total
+  }
 };
 
 // Do not edit below this line
