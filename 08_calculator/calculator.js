@@ -25,8 +25,12 @@ const multiply = function(arr) {
   return arr.reduce((total, currentNumber) => total * currentNumber, 1)
 };
 
-const power = function() {
-	
+const power = function(originalNumber, powerTo) {
+  let total = originalNumber
+  for (let i = 2; i <= powerTo; i++){
+    total = total * originalNumber
+  }
+  return total
 };
 
 const factorial = function() {
