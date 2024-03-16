@@ -1,5 +1,9 @@
-const add = function() {
-	
+const add = function(total, ...numbers) {
+  let sum = parseInt(total);
+  for (num in numbers) {
+    sum = parseInt(sum) + parseInt(num);
+  }
+  return sum;
 };
 
 const subtract = function() {
